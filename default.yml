@@ -1,0 +1,13 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - '**/*.gemspec'
+
+Metrics/LineLength:
+  Max: 100
+
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: required
+
+Style/Documentation:
+  Enabled: false
