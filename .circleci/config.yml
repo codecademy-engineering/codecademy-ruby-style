@@ -1,0 +1,31 @@
+version: 2.1
+
+jobs:
+  lint:
+    docker:
+      - image: circleci/ruby:2.5.5-stretch
+    steps:
+      - checkout
+      - restore_cache: &restore_cache
+          name: Restore Bundle Cache
+          keys:
+            - codecademy-style-gem-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+            - codecademy-style-gem-{{ .Branch }}
+            - codecademy-style-gem-master
+            - codecademy-style-gem-
+      - run: &bundle_install
+          command: bundle install --path vendor/bundle
+      - save_cache: &save_cache
+          name: Store Bundle Cache
+          key: codecademy-style-gem-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Run Rubocop
+          command: bundle exec rubocop --config ./.rubocop.yml
+
+workflows:
+  version: 2
+  lint:
+    jobs:
+      - lint
