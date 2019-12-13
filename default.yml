@@ -11,3 +11,7 @@ Naming/MemoizedInstanceVariableName:
 
 Style/Documentation:
   Enabled: false
+
+# More info: More info: https://github.com/rubocop-hq/ruby-style-guide/issues/556
+Style/ModuleFunction:
+  Enabled: false
