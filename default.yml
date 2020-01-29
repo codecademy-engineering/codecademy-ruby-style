@@ -2,6 +2,10 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
     - '**/*.gemspec'
+  ExcludedMethods:
+    - 'included' # ActiveSupport concerns
+    - 'namespace' # rake tasks
+    - 'task' # rake tasks
 
 Metrics/LineLength:
   Max: 100
