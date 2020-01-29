@@ -35,8 +35,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Require clients of this gem to have RuboCop installed
-  spec.add_dependency 'rubocop'
+  spec.add_dependency 'rubocop', '~> 0.79'
 
   spec.add_development_dependency 'bundler', '~> 1.17'
-  spec.add_development_dependency 'rubocop', '~> 0.77'
+  spec.add_development_dependency 'rubocop', '~> 0.79'
 end
