@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    codecademy-style (0.1.3)
+    codecademy-style (0.1.4)
       rubocop (~> 0.79)
 
 GEM

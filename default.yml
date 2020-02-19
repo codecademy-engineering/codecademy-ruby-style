@@ -7,7 +7,7 @@ Metrics/BlockLength:
     - 'namespace' # rake tasks
     - 'task' # rake tasks
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
 
 Naming/MemoizedInstanceVariableName:
