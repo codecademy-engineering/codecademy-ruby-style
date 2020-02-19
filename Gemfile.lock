@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    codecademy-style (0.1.4)
+    codecademy-style (0.1.5)
       rubocop (~> 0.79)
 
 GEM
@@ -29,7 +29,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.17)
   codecademy-style!
-  rubocop (~> 0.79)
+  rubocop (= 0.79)
 
 BUNDLED WITH
    1.17.3
