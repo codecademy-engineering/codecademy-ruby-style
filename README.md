@@ -8,17 +8,15 @@ Install this gem in the development and test groups
 
 ```ruby
 group :test, :development do
-  gem 'codecademy-style'
+  gem 'codecademy-style',
+      git: 'https://github.com/codecademy-engineering/codecademy-ruby-style.git',
+      tag: '0.1.5' # Or whatever version you want.
 end
 ```
 
 And then execute:
 
     $ bundle install
-
-Or install it yourself as:
-
-    $ gem install codecademy-style
 
 ## Usage
 
