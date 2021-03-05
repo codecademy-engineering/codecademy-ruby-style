@@ -11,7 +11,7 @@ jobs:
           keys:
             - codecademy-style-gem-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
             - codecademy-style-gem-{{ .Branch }}
-            - codecademy-style-gem-master
+            - codecademy-style-gem-main
             - codecademy-style-gem-
       - run: &bundle_install
           command: bundle install --path vendor/bundle
