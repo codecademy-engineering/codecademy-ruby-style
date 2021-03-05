@@ -18,9 +18,8 @@ Gem::Specification.new do |spec|
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
 
-  unless spec.respond_to?(:metadata)
-    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
-  end
+  error_msg = 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
+  raise error_msg unless spec.respond_to?(:metadata)
 
   # Don't allow this gem to be pushed anywhere.
   spec.metadata['allowed_push_host'] = 'none'
