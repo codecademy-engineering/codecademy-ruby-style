@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   lint:
     docker:
-      - image: circleci/ruby:2.5.5-stretch
+      - image: cimg/ruby:2.7.1
     steps:
       - checkout
       - restore_cache: &restore_cache

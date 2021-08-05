@@ -36,6 +36,6 @@ Gem::Specification.new do |spec|
   # Require clients of this gem to have RuboCop installed
   spec.add_dependency 'rubocop', '=0.79'
 
-  spec.add_development_dependency 'bundler', '~> 1.17'
+  spec.add_development_dependency 'bundler', '>= 2.2.10'
   spec.add_development_dependency 'rubocop', '=0.79'
 end
