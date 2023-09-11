@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'codecademy/style'
+require 'codecademy/style_spec'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
