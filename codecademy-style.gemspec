@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.version = CodecademyStyle::VERSION
   spec.authors = ['Codecademy Engineering']
 
+  spec.required_ruby_version = '>= 3.0'
+
   spec.summary = 'Shared RuboCop style configuration'
   spec.description = 'This gem holds shared RuboCop configuration for all of' \
 'Codecademy\'s Ruby code bases.'
@@ -34,8 +36,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Require clients of this gem to have RuboCop installed
-  spec.add_dependency 'rubocop', '=0.79'
+  spec.add_dependency 'rubocop', '~>1.56'
 
   spec.add_development_dependency 'bundler', '>= 2.2.10'
-  spec.add_development_dependency 'rubocop', '=0.79'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rubocop', '~>1.56'
 end
