@@ -8,7 +8,7 @@ on:
 jobs:
   lint:
     name: Lint the app
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # CCINFRA-13282: Ubuntu 26.04 breaks Ruby 2.7.1; remove in Phase 5
 
     steps:
     - name: Checkout
